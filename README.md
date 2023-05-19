@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a memory card game, built in React, utilizing functional components and React Hooks.
+Create a memory card game, built using the React framework, utilizing functional components and more advanced React Hooks.
 
 ## Skills learned and applied
 
