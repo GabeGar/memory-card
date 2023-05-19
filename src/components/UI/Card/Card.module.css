@@ -1,0 +1,17 @@
+.card {
+    height: auto;
+    width: auto;
+    padding: .75rem;
+    background-color: rgb(94, 94, 208);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.15, 1.25)
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+}

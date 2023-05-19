@@ -1,0 +1,23 @@
+.scoreboard {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 800px;
+    background-color: rgb(94, 94, 208);
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.scoreboard>* {
+    font-size: 2rem;
+}
+
+.score-info {
+    display: grid;
+}
+
+.score-info>div {
+    justify-self: center;
+}
