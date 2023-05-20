@@ -7,6 +7,7 @@ import tyt from "../src/assets/videos/TYTP5.mp4";
 import Images from "./utils/images";
 import shuffleArray from "./utils/shufflearray";
 import classes from "./App.module.css";
+import Header from "./components/Header/Header";
 
 const initialScoresState = {
     score: 0,
@@ -82,7 +83,7 @@ const App = () => {
     return (
         <>
             <div className={classes.background}>
-                <h1 className={classes.title}>Memory Card Game</h1>
+                <Header />
                 <ScoreBoard score={score} highScore={highScore} />
                 <Gameboard images={images} cardClicked={handleGameLogic} />
                 {takeYourTime}

@@ -1,18 +1,3 @@
-:root {
-    --title-color: rgb(94, 94, 208)
-}
-
-.title {
-    display: flex;
-    justify-content: center;
-    background-color: var(--title-color);
-    font-size: 4rem;
-    border-bottom: 4px solid var(--title-color);
-    margin-bottom: 1rem;
-    color: white;
-    font-style: italic;
-}
-
 .bg-video {
     display: grid;
     justify-content: center;
