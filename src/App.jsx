@@ -7,7 +7,7 @@ import tyt from "../src/assets/videos/TYTP5.mp4";
 import Images from "./utils/images";
 import shuffleArray from "./utils/shufflearray";
 import classes from "./App.module.css";
-import Header from "./components/Header/Header";
+import Header from "./components/UI/Header/Header";
 
 const initialScoresState = {
     score: 0,

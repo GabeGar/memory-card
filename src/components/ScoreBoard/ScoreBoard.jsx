@@ -6,7 +6,7 @@ const ScoreBoard = (props) => {
             <div className={classes["score-info"]}>
                 Current Score:
                 <div>{props.score}</div>
-            </div>{" "}
+            </div>
             <div className={classes["score-info"]}>
                 Highest Score:
                 <div>{props.highScore}</div>
