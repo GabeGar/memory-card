@@ -2,7 +2,9 @@ import Card from "../UI/Card/Card";
 import classes from "./GameBoard.module.css";
 
 const GameBoard = (props) => {
-    const content = props.images.map((image) => {
+    const { images } = props;
+
+    const gameboardContent = images.map((image) => {
         return (
             <Card key={image.id} onClick={props.cardClicked}>
                 <img id={image.id} src={image.src} alt={image.alt} />
@@ -10,7 +12,7 @@ const GameBoard = (props) => {
         );
     });
 
-    return <div className={classes.gameboard}>{content}</div>;
+    return <div className={classes.gameboard}>{gameboardContent}</div>;
 };
 
 export default GameBoard;

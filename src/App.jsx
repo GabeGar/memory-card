@@ -28,7 +28,7 @@ const gameScoreReducer = (state, action) => {
 
     if (action.type === "IMAGE_CLICKED" && state.currentId !== null) {
         if (state.id === action.id) {
-            return { score: 0, highScore: state.highScore, currentId: null };
+            return { ...initialScoresState, highScore: state.highScore };
         }
 
         if (state.id !== action.id) {
@@ -63,7 +63,7 @@ const App = () => {
         });
     }, [score]);
 
-    const handleGameLogic = (e) => {
+    const scoreLogicHandler = (e) => {
         dispatch({
             type: "IMAGE_CLICKED",
             id: e.target.id,
@@ -85,7 +85,7 @@ const App = () => {
             <div className={classes.background}>
                 <Header />
                 <ScoreBoard score={score} highScore={highScore} />
-                <Gameboard images={images} cardClicked={handleGameLogic} />
+                <Gameboard images={images} cardClicked={scoreLogicHandler} />
                 {takeYourTime}
             </div>
         </>
